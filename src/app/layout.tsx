@@ -1,9 +1,9 @@
 import type {Metadata} from 'next'
-import {Inter} from 'next/font/google'
+import {Bruno_Ace} from 'next/font/google'
 import React from 'react'
 import RootProvider from '@/utils/RootProvider'
 
-const inter = Inter({subsets: ['latin']})
+const inter = Bruno_Ace({weight: '400', subsets: ['latin']})
 
 export const metadata: Metadata = {
     title: 'Portifólio | Filipe Louro',
