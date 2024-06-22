@@ -9,7 +9,7 @@ export const HeroContainer = styled.section`
     width: 100vw;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
-    color: ${({theme}) => theme.text};
+    color: #FFFFFF;
     padding: 0 20px;
     position: absolute;
     z-index: 1;

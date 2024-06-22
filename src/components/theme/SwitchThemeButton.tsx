@@ -7,7 +7,6 @@ import {setTheme} from '@/redux/store/themeSlice'
 import {useDispatch, useSelector} from 'react-redux'
 import {RootState} from '@/redux/store/store'
 
-
 const SwitchThemeButton = () => {
     const theme = useSelector((state: RootState) => state.theme)
     const dispatch = useDispatch()
