@@ -9,6 +9,7 @@ interface SpaceModelProps {
 }
 
 const StyledCanvasWrapper = styled.div`
+    background-color: black;
     top: 0;
     left: 0;
     width: 100vw;
@@ -36,7 +37,7 @@ const SpaceModel: React.FC<SpaceModelProps> = ({scale, position}) => {
         setRandomYDirection(Math.random() * 2 - 1)
         setRandomZDirection(Math.random() * 2 - 1)
     }
-    
+
     useEffect(() => {
         toggleRandomDirections()
 

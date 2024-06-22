@@ -8,6 +8,7 @@ export const SwitchContainer = styled.div`
     align-items: center;
     margin-bottom: 1rem;
     position: absolute;
+    z-index: 2;
 `
 
 export const SwitchCheckbox = styled.input`
