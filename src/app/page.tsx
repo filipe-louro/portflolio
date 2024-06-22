@@ -1,12 +1,16 @@
-export default function Home() {
+'use client'
+import React, {useRef} from 'react'
+import BackgroundScene from '@/components/BackgroundScene'
+import HeroSection from '@/components/HeroSection'
+
+const Home: React.FC = () => {
+    const wrapperRef = useRef(null)
     return (
         <div>
-            <h1>TESTE Teste teste</h1>
-            <h2>TESTE Teste teste</h2>
-            <h3>TESTE Teste teste</h3>
-            <h4>TESTE Teste teste</h4>
-            <h5>TESTE Teste teste</h5>
-            <small>TESTE Teste teste</small>
+            <HeroSection/>
+            <BackgroundScene scrollContainer={wrapperRef}/>
         </div>
     )
 }
+
+export default Home

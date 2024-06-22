@@ -22,7 +22,7 @@ const ThemeSwitch = ({children}: { children: React.ReactNode }) => {
     }, [dispatch])
 
     return (
-        <StyledThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+        <StyledThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
             <GlobalStyles/>
             <SwitchThemeButton/>
             {children}

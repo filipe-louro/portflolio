@@ -4,7 +4,6 @@ export const GlobalStyles = createGlobalStyle`
     body {
         background-color: ${({theme}) => theme.background};
         color: ${({theme}) => theme.text};
-        transition: all 0.5s linear;
     }
 
     html,
@@ -13,15 +12,23 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 100%;
         max-width: 100vw;
         overflow-x: hidden;
+        font-family: var(--font-bruno-ace-sc), serif;
+        font-weight: 400;
     }
 
     * {
         padding: 0;
         margin: 0;
+        transition: all 0.3s linear;
     }
 
     a {
         text-decoration: none;
+    }
+
+    h1, h2, h3, h4, h5, small {
+        font-family: var(--font-bruno-ace), serif;
+        font-weight: 700;
     }
 
     h1 {

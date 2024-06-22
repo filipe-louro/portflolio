@@ -1,9 +1,10 @@
 import type {Metadata} from 'next'
-import {Bruno_Ace} from 'next/font/google'
+import {Bruno_Ace, Bruno_Ace_SC} from 'next/font/google'
 import React from 'react'
 import RootProvider from '@/utils/RootProvider'
 
-const inter = Bruno_Ace({weight: '400', subsets: ['latin']})
+const brunoAce = Bruno_Ace({weight: '400', subsets: ['latin'], variable: '--font-bruno-ace'})
+const brunoAceSC = Bruno_Ace_SC({weight: '400', subsets: ['latin'], variable: '--font-bruno-ace-sc'})
 
 export const metadata: Metadata = {
     title: 'Portifólio | Filipe Louro',
@@ -17,7 +18,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <body className={inter.className}>
+        <body className={`${brunoAce.className} ${brunoAceSC.className} ${brunoAce.variable} ${brunoAceSC.variable}`}>
         <RootProvider>
             {children}
         </RootProvider>
